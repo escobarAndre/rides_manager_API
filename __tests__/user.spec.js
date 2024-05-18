@@ -6,7 +6,6 @@ const {
     patch,
 } = require('../src/controllers/userControllers')
 const User = require('../src/models/user')
-const { jest, describe, test, expect, afterEach } = require('@jest/globals')
 
 jest.mock('../src/models/user', () => ({
     create: jest.fn(),
