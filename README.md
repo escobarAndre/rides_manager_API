@@ -6,7 +6,6 @@ Este projeto é uma aplicação para Gerenciamento de Corridas, destinada a admi
 
 ## Índice
 
-1. [Estrutura do Projeto](#estrutura-do-projeto)
 2. [Tecnologias Utilizadas](#tecnologias-utilizadas)
 3. [Instruções de Configuração](#instruções-de-configuração)
 4. [Endpoints da API](#endpoints-da-api)
@@ -17,41 +16,9 @@ Este projeto é uma aplicação para Gerenciamento de Corridas, destinada a admi
 
 ## Estrutura do Projeto
 
-O projeto segue uma arquitetura MVC padrão com a seguinte estrutura:
+O projeto segue uma arquitetura MVC padrão.
 
-/project-root
-├── **tests**
-│ ├── ride.spec.js
-│ ├── user.spec.js
-├── src
-│ ├── controllers
-│ │ ├── rideControllers.js
-│ │ └── userControllers.js
-│ │
-│ ├── models
-│ │ ├── ride.js
-│ │ └── user.js
-│ │
-│ ├── routes
-│ │ ├── healthCheckRoutes.js
-│ │ ├── rideRoutes.js
-│ │ └── usersRoutes.js
-│ │
-│ ├── schema
-│ │ ├── rideSchema.js
-│ │ └── userSchema.js
-│ │
-│ └── utils
-│ └── database.js
-│
-├── app.js
-└── webpack.config.js
-├── eslint.config.mjs
-├── .prettierrc.json
-├── .eslintrc.json
-├── .gitignore
-├── package.json
-├── README.md
+O padrão de arquitetura MVC oferece uma separação clara de responsabilidades entre os componentes do aplicativo - Modelo, Visão e Controlador. Isso simplifica o desenvolvimento, a manutenção e a escalabilidade do aplicativo, ao mesmo tempo em que melhora a reutilização de código e a testabilidade. Essa estrutura organizacional ajuda a manter o código limpo, compreensível e fácil de dar manutenção, tornando o MVC uma escolha valiosa para o desenvolvimento de aplicativos web.
 
 ## Tecnologias Utilizadas
 
