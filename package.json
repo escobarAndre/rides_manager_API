@@ -37,7 +37,10 @@
     "webpack-node-externals": "^3.0.0"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
+    "*.js": [
+        "eslint --fix",
+        "npm run test"
+    ],
+    "*.{js,css,md}": "prettier --list-different"
   }
 }
