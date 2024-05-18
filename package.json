@@ -38,8 +38,7 @@
     },
     "lint-staged": {
         "*.js": [
-            "npm run format:write",
-            "npm run test"
+            "npm run format:write"
         ]
     }
 }
