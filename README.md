@@ -6,13 +6,12 @@ Este projeto é uma aplicação para Gerenciamento de Corridas, destinada a admi
 
 ## Índice
 
+1. [Estrutura do projto](#estrutura-do-projeto)
 2. [Tecnologias Utilizadas](#tecnologias-utilizadas)
 3. [Instruções de Configuração](#instruções-de-configuração)
 4. [Endpoints da API](#endpoints-da-api)
-5. [Esquema do Banco de Dados](#esquema-do-banco-de-dados)
 6. [Executando Testes](#executando-testes)
-7. [Contribuição](#contribuição)
-8. [Licença](#licença)
+7. [Informações Adicionais](#informações-adicionais)
 
 ## Estrutura do Projeto
 
@@ -21,8 +20,6 @@ O projeto segue uma arquitetura MVC padrão.
 O padrão de arquitetura MVC oferece uma separação clara de responsabilidades entre os componentes do aplicativo - Modelo, Visão e Controlador. Isso simplifica o desenvolvimento, a manutenção e a escalabilidade do aplicativo, ao mesmo tempo em que melhora a reutilização de código e a testabilidade. Essa estrutura organizacional ajuda a manter o código limpo, compreensível e fácil de dar manutenção, tornando o MVC uma escolha valiosa para o desenvolvimento de aplicativos web.
 
 ## Tecnologias Utilizadas
-
-### Backend
 
 -   **Express**: Um framework web rápido, flexível e minimalista para Node.js.
 -   **Sequelize**: Uma biblioteca de ORM (Object-Relational Mapping) para Node.js, que suporta bancos de dados relacionais como MySQL, PostgreSQL, SQLite e outros.
@@ -91,7 +88,7 @@ O servidor será iniciado em http://localhost:3000.
     npm run serve:prod
 ```
 
-### Endpoints da API
+## Endpoints da API
 
 -   Rotas de Corrida (Ride)
 
@@ -124,7 +121,7 @@ O servidor será iniciado em http://localhost:3000.
     -   Atualizar os detalhes de um usuário
         Rota: /:id
 
-### Executando Testes
+## Executando Testes
 
 Para executar os testes, utilize o seguinte comando:
 
@@ -132,6 +129,6 @@ Para executar os testes, utilize o seguinte comando:
   npm run test
 ```
 
-### Informações adicionais
+## Informações adicionais
 
 Para criar uma corrida, é essencial primeiro criar um usuário, pois cada corrida está associada a um usuário. Recomenda-se a criação de alguns usuários antes de iniciar a iteração sobre as corridas.
