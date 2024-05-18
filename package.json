@@ -1,46 +1,45 @@
 {
-  "name": "gerador-de-corridas",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "serve:dev": "node app.js",
-    "serve": "node dist/final.js",
-    "build": "webpack",
-    "test": "jest",
-    "format:check": "prettier --check .",
-    "format:write": "prettier --write .",
-    "lint:check": "eslint .",
-    "lint:fix": "eslint --fix .",
-    "prepare": "husky"
-  },
-  "author": "André Escobar",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.19.2",
-    "jest": "^29.7.0",
-    "joi": "^17.13.1",
-    "sequelize": "^6.37.3",
-    "sqlite3": "^5.1.7"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.3.0",
-    "@types/jest": "^29.5.12",
-    "eslint": "^9.3.0",
-    "eslint-config-prettier": "^9.1.0",
-    "globals": "^15.2.0",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.2",
-    "prettier": "^3.2.5",
-    "webpack": "^5.91.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-node-externals": "^3.0.0"
-  },
-  "lint-staged": {
-    "*.js": [
-        "eslint --fix",
-        "npm run test"
-    ],
-    "*.{js,css,md}": "prettier --list-different"
-  }
+    "name": "gerador-de-corridas",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "serve:dev": "node app.js",
+        "serve": "node dist/final.js",
+        "build": "webpack",
+        "test": "jest",
+        "format:check": "prettier --check .",
+        "format:write": "prettier --write .",
+        "lint:check": "eslint .",
+        "lint:fix": "eslint --fix .",
+        "prepare": "husky"
+    },
+    "author": "André Escobar",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.19.2",
+        "jest": "^29.7.0",
+        "joi": "^17.13.1",
+        "sequelize": "^6.37.3",
+        "sqlite3": "^5.1.7"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.3.0",
+        "@types/jest": "^29.5.12",
+        "eslint": "^9.3.0",
+        "eslint-config-prettier": "^9.1.0",
+        "globals": "^15.2.0",
+        "husky": "^9.0.11",
+        "lint-staged": "^15.2.2",
+        "prettier": "^3.2.5",
+        "webpack": "^5.91.0",
+        "webpack-cli": "^5.1.4",
+        "webpack-node-externals": "^3.0.0"
+    },
+    "lint-staged": {
+        "*.js": [
+            "npm run format:write",
+            "npm run test"
+        ]
+    }
 }
