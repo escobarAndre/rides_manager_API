@@ -24,11 +24,26 @@ const server = app.listen(PORT, () => {
 
 process.on('SIGINT', () => {
     server.close(() => {
-        fs.unlink('./database.sqlite', (err) => {
-            if (err) {
-                console.error('Error deleting file:', err)
-                return
+        const readline = require('readline')
+
+        const rl = readline.createInterface({
+            input: process.stdin,
+            output: process.stdout,
+        })
+
+        rl.question('Want delete database? yes/no ', (answer) => {
+            const parsedAnswer = answer.toLocaleLowerCase()
+
+            if (parsedAnswer === 'yes' || parsedAnswer === 'y') {
+                fs.unlink('./database.sqlite', (err) => {
+                    if (err) {
+                        console.error('Error deleting file:', err)
+                        return
+                    }
+                })
             }
+
+            rl.close()
         })
     })
 })
