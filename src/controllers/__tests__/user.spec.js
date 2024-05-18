@@ -4,10 +4,10 @@ const {
     getOne,
     delete: deleteUser,
     patch,
-} = require('../src/controllers/userControllers')
-const User = require('../src/models/user')
+} = require('../../controllers/userControllers')
+const User = require('../../models/user')
 
-jest.mock('../src/models/user', () => ({
+jest.mock('../../models/user', () => ({
     create: jest.fn(),
     findAll: jest.fn(),
     findByPk: jest.fn(),

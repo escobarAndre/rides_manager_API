@@ -7,18 +7,18 @@ const {
     cancel,
     start,
     finish,
-} = require('../src/controllers/rideControllers')
-const Ride = require('../src/models/ride')
-const User = require('../src/models/user')
+} = require('../../controllers/rideControllers')
+const Ride = require('../../models/ride')
+const User = require('../../models/user')
 
-jest.mock('../src/models/ride', () => ({
+jest.mock('../../models/ride', () => ({
     findAll: jest.fn(),
     findByPk: jest.fn(),
     create: jest.fn(),
     save: jest.fn(),
 }))
 
-jest.mock('../src/models/user', () => ({
+jest.mock('../../models/user', () => ({
     findByPk: jest.fn(),
 }))
 

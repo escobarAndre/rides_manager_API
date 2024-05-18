@@ -38,7 +38,9 @@
     },
     "lint-staged": {
         "*.js": [
-            "npm run format:write"
+            "npm run format:write",
+            "prettier --list-different",
+            "npm run test"
         ]
     }
 }

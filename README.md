@@ -102,23 +102,26 @@ O projeto segue uma arquitetura MVC padrão com a seguinte estrutura:
      npm install
     ```
 
-````
-
 ### Executando a Aplicação
 
-Para iniciar a aplicação em modo de desenvolvimento:
+**Para iniciar a aplicação em modo de desenvolvimento:**
 
 ```bash
   npm run serve:dev
-````
+```
 
 O servidor será iniciado em http://localhost:3000.
 
-Para iniciar a aplicação em modo de produção:
+### Build
 
 ```bash
     npm run build
-    npm run serve:dev
+```
+
+**Para iniciar a aplicação em modo de produção:**
+
+```bash
+    npm run serve:prod
 ```
 
 ### Endpoints da API
