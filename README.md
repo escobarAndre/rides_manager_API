@@ -6,7 +6,7 @@ Este projeto é uma aplicação para Gerenciamento de Corridas, destinada a admi
 
 ## Índice
 
-1. [Estrutura do projto](#estrutura-do-projeto)
+1. [Estrutura do projeto](#estrutura-do-projeto)
 2. [Tecnologias Utilizadas](#tecnologias-utilizadas)
 3. [Instruções de Configuração](#instruções-de-configuração)
 4. [Endpoints da API](#endpoints-da-api)
@@ -57,8 +57,7 @@ O padrão de arquitetura MVC oferece uma separação clara de responsabilidades 
 1. Clone o repositório:
 
     ```bash
-    git clone https://github.com/seuusuario/gerador-de-corridas.git
-    cd gerador-de-corridas
+    git clone git@github.com:escobarAndre/rides_manager_API.git
     ```
 
 2. Instale as dependências:
